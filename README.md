@@ -1,11 +1,11 @@
-#Overview
-This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car.
+# Overview
+This is the repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car.
 It is a team project. contributed to this project:
 
-### Team Vidyut
+### TEAM :
 | Name | Email | Slack |
 | --- | --- | --- |
-| Shyam Jagannathan | shyam.jagannathan@gmail.com | @shyam.jagannathan (Team Lead) |
+| Shyam Jagannathan | shyam.jagannathan@gmail.com | @shyam.jagannathan |
 | Hubert de Lassus | hubert.delassus@gmail.com | @delassus |
 | Haitham Khedr | haithamkhedr@gmail.com | @haithamkhedr |
 | Ganesh Setty R | setty.ganesh@gmail.com | @gsetty |
