@@ -61,9 +61,12 @@ A package containing code from Autoware which subscribes to /final_waypoints and
 
 # Implementation
 **Waypoint Updater Node** (partial): Completes a waypoint updater which subscribes to /base_waypoints and /current_pose and publishes to /final_waypoints.
+
 **DBW Node**: Once the waypoint updater is publishing /final_waypoints, the waypoint_follower node will start publishing messages to the/twist_cmd topic. At this point, we have everything needed to build the dbw_node. After completing this step, the car drives in the simulator, ignoring the traffic lights.
+
 **Traffic Light Detection**: This is split into 2 parts:
 Detection: Detect the traffic light and its color from the /image_color. The topic /vehicle/traffic_lights contains the exact location and status of all traffic lights in simulator, so we can test our output.
+
 **Waypoint publishing**: Once we have correctly identified the traffic light and determined its position, we can convert it to a waypoint index and publish it.
 Waypoint Updater (Full): we use /traffic_waypoint to change the waypoint target velocities before publishing to /final_waypoints. The car now stops at red traffic lights and moves when they are green.
 
