@@ -26,7 +26,7 @@ Below is a brief overview of the repo structure, along with descriptions of the 
 
 # Traffic Light Detector
 (path_to_project_repo)/ros/src/tl_detector/
-This package contains the traffic light detection node: tl_detector.py. This node takes in data from the /image_color, /current_pose, and /base_waypoints topics and publishes the locations to stop for red traffic lights to the /traffic_waypoint topic.
+This package contains the traffic light detection node: tl_detector.py. This node takes in data from the /image_color, /current_pose, and /base_waypoints topics and publishes the locations to stop for red traffic lights to the /traffic_waypoint topic. The detector is a Mobile Netconvolutional Neural Network that combines in one shot detection of the traffic light in the video stream of the dashboard camera and classification of its color between Green, Yellow, Red.
 ![tl-detector-ros-graph](https://user-images.githubusercontent.com/6969317/31867909-0d975d5c-b74c-11e7-9944-0371ba77aa60.png)
 
 
