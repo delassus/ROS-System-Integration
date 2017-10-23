@@ -93,46 +93,23 @@ Waypoint Updater (Full): we use /traffic_waypoint to change the waypoint target 
 
 1. Clone the project repository
 ```bash
-git clone https://github.com/udacity/CarND-Capstone.git
+git clone https://github.com/delassus/ROS-System-Integration.git
 ```
 
 2. Install python dependencies
 ```bash
-cd CarND-Capstone
+cd ROS-System-Integration
 pip install -r requirements.txt
 
-3. Download and install Tensorflow checkpoint
-```bash
-download the tensorflow checkpoint and put it in ros/src/tl_detector/ckpt/
-https://drive.google.com/file/d/0B2K7eATT8qRAY0g0aWhjdkw0bEU/view
-file: tiny-yolov2-udacity.tar.gz (size 222MB)
-Move the downloaded tar file to Vidyut-CarND-Capstone-master/ros/src/tl_detector/ckpt/
-tar xzf tiny-yolov2-udacity.tar.gz
-move the files in tiny-yolo-v2 directory one level up to ckpt directory
-cd Vidyut-CarND-Capstone-master/ros/src/tl_detector/ckpt/
-\cp -rf tiny-yolo-v2/* .
-cd ../../../../
 
-```
-
-3. Compile tl_detector package Cython files
-```bash
-cd ros
-cd src
-cd tl_detector
-cd cython_utils
-python setup.py build_ext --inplace
-cd ../../../../
-```
-
-4. Make and run styx
+3. Make and run styx
 ```bash
 cd ros
 catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
 ```
-5. Run the simulator
+4. Run the simulator
 
 ### Real world testing
 1. Download [training bag](https://drive.google.com/file/d/0B2_h37bMVw3iYkdJTlRSUlJIamM/view?usp=sharing) that was recorded on the Udacity self-driving car
@@ -146,7 +123,7 @@ rosbag play -l traffic_light_bag_files/loop_with_traffic_light.bag
 ```
 4. Launch your project in site mode
 ```bash
-cd CarND-Capstone/ros
+cd ROS-System-Integration/ros
 roslaunch launch/site.launch
 ```
 
