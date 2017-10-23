@@ -44,7 +44,7 @@ This package contains the waypoint updater node: waypoint_updater.py. The purpos
 
 # Drive By Wire
 Carla the Udacity Lincoln self driving car is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. This package contains the files that are responsible for control of the vehicle: the node dbw_node.py and the file twist_controller.py, along with a pid and lowpass filter. The dbw_node subscribes to the /current_velocity topic along with the /twist_cmd topic to receive target linear and angular velocities. Additionally, this node will subscribe to /vehicle/dbw_enabled, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the /vehicle/throttle_cmd, /vehicle/brake_cmd, and /vehicle/steering_cmd topics.
-[Drive By Wire ROS Node](docs/dbw-node-ros-graph.png)
+![dbw-node-ros-graph](https://user-images.githubusercontent.com/6969317/31867963-01ad7a52-b74d-11e7-997e-a131dccb89c6.png)
 
 # Additional packages
 In addition to these packages you will find the following. The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to provide custom ROS message types:
