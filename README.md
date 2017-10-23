@@ -14,7 +14,8 @@ It is a team project. contributed to this project:
 
 
 # System Architecture Diagram
-[Architecture Diagram](docs/final-project-ros-graph-v2.png)
+
+![final-project-ros-graph-v2](https://user-images.githubusercontent.com/6969317/31867863-46a81e98-b74b-11e7-857f-e55a429671f8.png)
 
 For this project, I will be be writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following. I will test the code using a simulator, and finally, the project will be run on "Carla" the Udacity Lincoln self driving car.
 
